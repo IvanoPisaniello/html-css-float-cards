@@ -16,6 +16,16 @@ body {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f-right {
+    float: right;
+}
+
 /* header */
 h1 {
     font-size: 40px;
@@ -32,3 +42,31 @@ p {
 }
 
 /* Main */
+
+.main-box {
+    width: 100%;
+    border: 1px solid red;
+    height: 300px;
+    margin-top: 40px;
+    padding-right: 25px;
+}
+
+.uppercard {
+    margin-top: 40px;
+    width: calc(33.33% - 20px);
+    border: 1px solid red;
+    height: 80px;
+}
+
+.undercard {
+    margin-top: 50px;
+    width: calc(33.33% - 20px);
+    border: 1px solid red;
+    height: 80px;
+}
+
+
+.middlecard {
+    margin-right: 20px;
+    margin-left: 20px;
+}
